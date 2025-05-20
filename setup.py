@@ -21,7 +21,7 @@ dir_path =path.dirname(os.path.realpath(__file__))+os.sep
 
 version = '1.0.10'
 
-npinc=np.get_include()+os.sep+'numpy'
+npinc=np.get_include()
 # Filename for the C extension module library
 c_module_name = '_FDTDStaggered3D_with_relaxation'
 
@@ -323,11 +323,10 @@ setup(name="BabelViscoFDTD",
         cmdclass=cmdclass,
         ext_modules=ext_modules,
         zip_safe=False,
-        license='BSD License',
-        license_files=('LICENSE'),
+        license='BSD-3-Clause',
+        license_files=['LICENSE'],
         classifiers=[
             "Programming Language :: Python :: 3",
-            "License :: OSI Approved :: BSD License",
             "Operating System :: MacOS",
             "Operating System :: Microsoft :: Windows",
             "Operating System :: POSIX :: Linux",

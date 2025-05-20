@@ -1,0 +1,13 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "numpy<1.24", # required for setup.py and pinned because of depricated _public_dtype_api_table.h dependancy
+    "scipy", # needed for install_requires
+    "h5py",
+    "hdf5plugin",
+    "pydicom",
+    "pyopencl"
+]
+build-backend = "setuptools.build_meta"
+
